@@ -125,6 +125,8 @@ class MainWindow(QMainWindow):
         self.setWindowTitle(f"Mon navigateur web - Chargement à {progress}%")
         self.progress_label.setText(f"{progress}%")
         self.progress_bar.setValue(progress)
+        if progress >= 99:
+            self.toggle_buttons_enabled(True)
 
     def on_load_started(self):
         # print(f"Chargement du site : {self.current_url}")
