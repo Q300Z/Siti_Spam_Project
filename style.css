@@ -1,0 +1,8 @@
+QPushButton:pressed {
+    background-color: black;
+    color: white;
+}
+QPushButton:disabled {
+    color: #808080;
+    background-color: #CCCCCC;
+}
